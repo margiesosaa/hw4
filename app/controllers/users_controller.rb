@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to "/login"
     else
-      redirect_to "/signup"
+      render :new
     end
   end
 end
